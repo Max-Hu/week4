@@ -1,86 +1,149 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 4, ../sass/style.scss */
 body {
-  background: #E4E4E4 url("site/bg.png");
-  	color: #292929;
-  	color: rgba(0, 0, 0, 0.82);
-  	font: normal 100% Cambria, Georgia, serif;
-  	-moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  	-webkit-text-size-adjust: none;
+  margin: 30px;
+  /*background-image: url("../img/bg.jpg");*/
+  background-color: #000;
+  /*background-repeat: no-repeat;
+  filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+-moz-background-size:100% 100%;
+    background-size:100% 100%;*/
+    font-family: "Metallophile", "Trebuchet MS", Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  color: #3AB516;
+}
+.container .slide_bar {
+  width: 20%;
+  float:left;
+
+}
+.container .slide_bar img {
+  width: 215px;
+  height: 125px;
+  border-radius: 100%;
+}
+.container .slide_bar ul {
+  padding: 0;
+}
+.container .slide_bar li {
+  list-style-type:none;
+  text-align: center;
+}
+.container .slide_bar a {
+  font-size: 18px;
+  line-height:2;
+  color: #3AB516;
+  text-decoration: none;
 }
 
-.slide_bar{
-    float: left;
-    width: 31.875%;
+.container .main {
+  width: 74%;
+  float:left;
+  margin-right: 3%;
+  margin-left: 3%;
 }
-.slide_bar .nav {
-    border-top: 1px solid #888583;
-    margin: 2em auto 0;
-    width: 64.379%;
+
+.container .main h1 {
+  background-image: -webkit-linear-gradient(top, #769944 0%, #769944 22.916667%, #9fb84a 37.5%, #e8e361 55%);
+  -webkit-background-clip: text;
+background-size: 1.2em 1.2em;
+-webkit-text-fill-color: transparent;
+color: #e8e361;
+font-family: "Metallophile", "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 400;
+line-height: 1.2;
+text-transform: uppercase;
+}
+.container .main p {
+  text-align: left;
+}
+.container .main .subtitle {
+  text-align: center;
+  margin:0 auto 0 auto;
+}
+.container .main .subtitle  .leftline {
+  width: 40%;
+  height: 2px;
+  background-color: #3AB516;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.container .main .subtitle  .rightline {
+  width: 40%;
+  height: 2px;
+  background-color: #3AB516;
+  display: inline-block;
+}
+.container .main .subtitle h3 {
+  display: inline;
+  margin: 0 10px 0 10px;
+  background-image: -webkit-linear-gradient(top, #769944 0%, #769944 22.916667%, #9fb84a 37.5%, #e8e361 55%);
+  -webkit-background-clip: text;
+background-size: 1.2em 1.2em;
+-webkit-text-fill-color: transparent;
+color: #e8e361;
+font-family: "Metallophile", "Trebuchet MS", Helvetica, sans-serif;
+font-weight: 400;
+line-height: 1.2;
+}
+.container .main .images {
+  text-align: center;
+  margin:0 auto 0 auto;
+}
+.container .main .images .image {
+  float: left;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin: 0 3% 1.5em 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30%;
+}
+.container .main .images .image img {
+    display: block;
+    margin: 0 auto 1em;
+    width: 210px;
+height: 220px;
+}
+.container .main .images .image p {
+  display: inline;
+  font-size: 15px;
+}
+
+.container .main .footer {
+  text-align: center;
+  margin:50px auto 10px auto;
+}
+
+.container .main .footer img{
+  position: relative;
+  top: 15px;
+  width: 132px;
+  height: 51px;
+}
+
+.container .main .footer  .foot_leftline {
+  width: 40%;
+  height: 2px;
+  background-color: #3AB516;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.container .main .footer  .foot_rightline {
+  width: 40%;
+  height: 2px;
+  background-color: #3AB516;
+  display: inline-block;
+}
+
+.container .main .footer p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.clear {
+  clear: both;
 }
